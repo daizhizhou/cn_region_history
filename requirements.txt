@@ -1,1 +1,3 @@
-pandas requests tqdm
+pandas
+requests
+tqdm

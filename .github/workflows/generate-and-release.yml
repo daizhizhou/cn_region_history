@@ -54,7 +54,7 @@ jobs:
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_PAT }}
 
       - name: Upload release asset (zip)
         uses: actions/upload-release-asset@v1
@@ -64,4 +64,4 @@ jobs:
           asset_name: cn_regions_${{ inputs.release_tag }}.zip
           asset_content_type: application/zip
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_PAT }}
